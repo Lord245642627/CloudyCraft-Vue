@@ -58,7 +58,7 @@
             <ul>
               <li>博客名称：纤云弄巧</li>
               <li>博客简介：一个建立于 21 世纪，存活于互联网边缘的小站</li>
-              <li>博客头像: https://img.cloudycraft.cn/blog/config/a5dc50da718070d5e7d1b4baa0fa91d4.png</li>
+              <li>博客头像: https://www.cloudycraft.cn/img/favicon.png</li>
               <li>博客地址: https://www.cloudycraft.cn</li>
             </ul>
 
