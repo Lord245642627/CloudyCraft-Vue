@@ -3,7 +3,7 @@
     <span class="ob-drop-shadow" data-dia="search" @click="handleOpenModel">
       <svg-icon icon-class="search" />
     </span>
-    <span></span>
+    <!-- <span></span> -->
     <Dropdown v-if="multiLanguage === 1" @command="handleClick">
       <span class="ob-drop-shadow" data-dia="language">
         <span v-if="$i18n.locale == 'cn'"> <svg-icon icon-class="cn" />中文 </span>
@@ -14,7 +14,7 @@
         <DropdownItem name="cn">中文</DropdownItem>
       </DropdownMenu>
     </Dropdown>
-    <span></span>
+    <!-- <span></span> -->
     <template v-if="userInfo === ''">
       <span class="mr-3" @click="openLoginDialog"
         ><strong>{{ t('settings.login') }}</strong></span
@@ -37,12 +37,12 @@
         </DropdownMenu>
       </Dropdown>
     </template>
-    <span></span>
+    <!-- <span></span> -->
     <span no-hover-effect class="ob-drop-shadow" data-dia="light-switch">
       <ThemeToggle />
     </span>
   </div>
-  <el-dialog v-model="loginDialogVisible" width="380px" :fullscreen="isMobile">
+  <el-dialog v-model="loginDialogVisible" width="380px" >
     <el-form @keyup.enter.native="login">
       <el-form-item
         label="账号"
@@ -89,7 +89,7 @@
       </div>
     </el-form>
   </el-dialog>
-  <el-dialog v-model="registerDialogVisible" width="380px" :fullscreen="isMobile">
+  <el-dialog v-model="registerDialogVisible" width="380px">
     <el-form>
       <el-form-item
         label="邮箱:"
@@ -131,7 +131,7 @@
       <span class="text" @click="returnLoginDialog">已有账号？去登录</span>
     </el-form>
   </el-dialog>
-  <el-dialog v-model="forgetPasswordDialogVisible" width="380px" :fullscreen="isMobile">
+  <el-dialog v-model="forgetPasswordDialogVisible" width="380px">
     <el-form>
       <el-form-item
         label="邮箱:"
@@ -173,7 +173,7 @@
       <span class="text" @click="returnLoginDialog">返回登录</span>
     </el-form>
   </el-dialog>
-  <el-dialog v-model="articlePasswordDialogVisible" width="30%" :fullscreen="isMobile">
+  <el-dialog v-model="articlePasswordDialogVisible" width="380px">
     <el-form @submit.native.prevent @keyup.enter.native="accessArticle">
       <el-form-item model="userInfo" class="mt-5">
         <el-input id="article-password-input" v-model="articlePassword" placeholder="文章受密码保护,请输入密码" />

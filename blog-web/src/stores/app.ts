@@ -27,27 +27,28 @@ export const useAppStore = defineStore('appStore', {
         theme: cookies.get('theme') ? String(cookies.get('theme')) : 'theme-dark',
         profile_shape: 'circle-avatar',
         feature: true,
-        // gradient: {
-        //   color_1: '#24c6dc',
-        //   color_2: '#5433ff',
-        //   color_3: '#ff0099'
-        // },
         gradient: {
-          color_1: '#2CD8D5',
-          color_2: '#C5C1FF',
-          color_3: '#FFBAC3'
+          color_1: '#24c6dc',
+          color_2: '#5433ff',
+          color_3: '#ff0099'
         },
-        // header_gradient_css: 'linear-gradient(423deg, #002FA7 30.5% , #B8B9D4 60.07%, #6B1AE6 20.05%)',
+        // gradient: {
+        //   color_1: '#2CD8D5',
+        //   color_2: '#C5C1FF',
+        //   color_3: '#FFBAC3'
+        // },
+        header_gradient_css: 'linear-gradient(423deg, #002FA7 30.5% , #B8B9D4 60.07%, #6B1AE6 20.05%)',
         // header_gradient_css: 'linear-gradient(130deg, #FFDAF3 30.5%, #C394F2 60.07%, #6ECFEF 76.05%)',
         // header_gradient_css: 'linear-gradient(130deg, #1FA2FF 30.5%, #12D8FA 60.07%, #A6FFCB 90%)',
-        header_gradient_css: 'linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)',
+        // header_gradient_css: 'linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)',
         // header_gradient_css: 'linear-gradient(103.3deg, rgb(252, 225, 208) 30%, rgb(255, 173, 214) 55.7%, rgb(162, 186, 245) 81.8%)',
+        // header_gradient_css: 'linear-gradient(90deg, rgb(59, 190, 255) 0%, rgb(64, 92, 255) 52.32%, rgb(59, 190, 255) 102.5%)',
         background_gradient_style: {
           background: 
-          // 'linear-gradient(423deg, #002FA7 30.5% , #B8B9D4 60.07%, #6B1AE6 20.05%)',
+          'linear-gradient(423deg, #002FA7 30.5% , #B8B9D4 60.07%, #6B1AE6 20.05%)',
           // 'linear-gradient(130deg, #FFDAF3 30.5%, #C394F2 60.07%, #6ECFEF 76.05%)',
           // 'linear-gradient(130deg, #1FA2FF 30.5%, #12D8FA 60.07%, #A6FFCB 76.05%)',
-          'linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)',
+          // 'linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)',
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
           '-webkit-box-decoration-break': 'clone',

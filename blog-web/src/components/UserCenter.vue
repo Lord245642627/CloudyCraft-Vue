@@ -56,7 +56,7 @@
     <br />
     <br />
   </el-drawer>
-  <el-dialog v-model="emailDialogVisible" width="30%">
+  <el-dialog v-model="emailDialogVisible" width="380px">
     <el-form>
       <el-form-item model="userInfo" class="mt-5">
         <el-input v-model="email" placeholder="邮箱号" />
